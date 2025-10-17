@@ -17,6 +17,8 @@
       text-align: center;
       padding: 80px 20px 40px;
       background: radial-gradient(circle at top, #00f5ff 0%, #000 100%);
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
@@ -28,6 +30,25 @@
       from { text-shadow: 0 0 10px #00f5ff; }
       to { text-shadow: 0 0 30px #00f5ff; }
     }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.5s; }
+    section:nth-of-type(3) { animation-delay: 1s; }
+    section:nth-of-type(4) { animation-delay: 1.5s; }
     h2 {
       font-size: 2rem;
       margin-bottom: 20px;
@@ -41,24 +62,6 @@
       max-width: 700px;
       margin: 0 auto 30px;
       line-height: 1.6;
-    }
-    .cta-button {
-      background: #00f5ff;
-      color: #000;
-      padding: 15px 30px;
-      border: none;
-      font-size: 1.1rem;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .cta-button:hover {
-      transform: scale(1.05);
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
     }
     .features {
       display: flex;
@@ -78,11 +81,29 @@
     .feature-box:hover {
       transform: translateY(-5px);
     }
+    .cta-button {
+      background: #00f5ff;
+      color: #000;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
     footer {
       text-align: center;
       padding: 40px 20px;
       font-size: 0.9rem;
       color: #aaa;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 2s;
     }
   </style>
 </head>
@@ -91,53 +112,35 @@
   <header>
     <h1>Flowgen-ix</h1>
     <p>Build AI-powered income systems in 2 hours a day. No fluff. Just leverage.</p>
-    <a href="https://yourcheckoutlink.com"><button class="cta-button">Buy the Tutorial</button></a>
+    <a href="https://yourcheckoutlink.com"><button class="cta-button">Get the Kit</button></a>
   </header>
 
   <section>
     <h2>What You’ll Get</h2>
     <div class="features">
       <div class="feature-box">
-        <h3>Prebuilt Automation Systems</h3>
+        <h3>Automation Systems</h3>
         <p>Plug-and-play workflows using n8n, OpenAI, Stripe, and webhook logic.</p>
       </div>
       <div class="feature-box">
-        <h3>Scalable Funnel Templates</h3>
+        <h3>Funnel Templates</h3>
         <p>Faceless, high-ticket funnels optimized for credibility and conversion.</p>
       </div>
       <div class="feature-box">
-        <h3>Tactical Execution Guide</h3>
+        <h3>Execution Guide</h3>
         <p>Step-by-step breakdowns with zero fluff and full leverage.</p>
-      </div>
-      <div class="feature-box">
-        <h3>DNS + Hosting Setup</h3>
-        <p>Deploy with GitHub Pages, Cloudflare, and custom domains in minutes.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Delivery Automation</h3>
-        <p>Instant product delivery via secure links and webhook triggers.</p>
-      </div>
-      <div class="feature-box">
-        <h3>System Architecture Blueprint</h3>
-        <p>Understand how to scale faceless brands with modular automation.</p>
       </div>
     </div>
   </section>
 
   <section>
     <h2>Who It’s For</h2>
-    <p>Creators, coders, and entrepreneurs who want to automate income, scale faceless brands, and dominate niche markets with elite systems. If you value speed, leverage, and tactical execution — this is for you.</p>
+    <p>Creators, coders, and entrepreneurs who want to automate income, scale faceless brands, and dominate niche markets with elite systems.</p>
   </section>
 
   <section>
     <h2>How It Works</h2>
-    <p>You get a downloadable kit with everything preconfigured. Connect your product, plug in your checkout, and deploy. No dependencies, no fluff, no wasted time. Just results.</p>
-  </section>
-
-  <section>
-    <h2>Ready to Deploy?</h2>
-    <p>Launch your faceless automation system in under 30 minutes. Built for speed, scale, and credibility.</p>
-    <a href="https://yourcheckoutlink.com"><button class="cta-button">Get the Kit</button></a>
+    <p>You get a downloadable kit with everything preconfigured. Connect your product, plug in your checkout, and deploy. No dependencies, no fluff, no wasted time.</p>
   </section>
 
   <footer>
@@ -146,4 +149,3 @@
 
 </body>
 </html>
-
