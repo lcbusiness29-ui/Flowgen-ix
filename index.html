@@ -3,103 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flowgen-ix | Tactical Automation Kits</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <title>Flowgen-ix | Automate Your Income</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #fff;
-      color: #111;
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: auto;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: radial-gradient(circle at top, #00f5ff 0%, #000 100%);
     }
     h1 {
-      font-size: 2.8em;
-      font-weight: 800;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
       margin-bottom: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00f5ff; }
+      to { text-shadow: 0 0 30px #00f5ff; }
     }
     h2 {
-      font-size: 1.6em;
-      font-weight: 600;
-      margin-top: 60px;
+      font-size: 2rem;
       margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
       line-height: 1.6;
-      margin-bottom: 20px;
     }
-    ul {
-      padding-left: 20px;
-      line-height: 1.8;
+    .cta-button {
+      background: #00f5ff;
+      color: #000;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
-    .cta {
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
       margin-top: 40px;
     }
-    .cta a {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #000;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+    .feature-box {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease;
     }
-    .cta a:hover {
-      background-color: #333;
+    .feature-box:hover {
+      transform: translateY(-5px);
     }
     footer {
-      margin-top: 80px;
-      font-size: 0.9em;
-      color: #666;
       text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <h1>Flowgen-ix</h1>
-  <p>Deploy tactical automation kits for faceless brands, creators, and system-driven businesses. Built for leverage, speed, and scale.</p>
+  <header>
+    <h1>Flowgen-ix</h1>
+    <p>Build AI-powered income systems in 2 hours a day. No fluff. Just leverage.</p>
+    <a href="https://yourcheckoutlink.com"><button class="cta-button">Buy the Tutorial</button></a>
+  </header>
 
-  <div class="cta">
-    <a href="https://checkout.flowgen-ix.com">Get the Kit →</a>
-  </div>
+  <section>
+    <h2>What You’ll Get</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Prebuilt Automation Systems</h3>
+        <p>Plug-and-play workflows using n8n, OpenAI, Stripe, and webhook logic.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Scalable Funnel Templates</h3>
+        <p>Faceless, high-ticket funnels optimized for credibility and conversion.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Tactical Execution Guide</h3>
+        <p>Step-by-step breakdowns with zero fluff and full leverage.</p>
+      </div>
+      <div class="feature-box">
+        <h3>DNS + Hosting Setup</h3>
+        <p>Deploy with GitHub Pages, Cloudflare, and custom domains in minutes.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Delivery Automation</h3>
+        <p>Instant product delivery via secure links and webhook triggers.</p>
+      </div>
+      <div class="feature-box">
+        <h3>System Architecture Blueprint</h3>
+        <p>Understand how to scale faceless brands with modular automation.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>What’s Inside</h2>
-  <ul>
-    <li>Prebuilt n8n workflows for automated product delivery</li>
-    <li>GitHub-hosted landing page templates with Cloudflare routing</li>
-    <li>Webhook-ready checkout integration (Stripe, Gumroad, custom)</li>
-    <li>DNS setup instructions for faceless deployment</li>
-  </ul>
+  <section>
+    <h2>Who It’s For</h2>
+    <p>Creators, coders, and entrepreneurs who want to automate income, scale faceless brands, and dominate niche markets with elite systems. If you value speed, leverage, and tactical execution — this is for you.</p>
+  </section>
 
-  <h2>How It Works</h2>
-  <p>Each kit is designed to launch in under 30 minutes. You plug in your product, connect your checkout, and deploy. No fluff. No dependencies. Just leverage.</p>
+  <section>
+    <h2>How It Works</h2>
+    <p>You get a downloadable kit with everything preconfigured. Connect your product, plug in your checkout, and deploy. No dependencies, no fluff, no wasted time. Just results.</p>
+  </section>
 
-  <h2>Who It’s For</h2>
-  <p>Flowgen-ix is built for tactical creators, faceless entrepreneurs, and system-first operators who value speed, automation, and credibility. If you're building quietly but scaling aggressively, this is for you.</p>
-
-  <h2>Why It’s Different</h2>
-  <ul>
-    <li>Zero-code deployment</li>
-    <li>Faceless branding architecture</li>
-    <li>Optimized for conversion and credibility</li>
-    <li>Built for scale, not noise</li>
-  </ul>
-
-  <h2>Next Steps</h2>
-  <p>Once you purchase, you’ll receive instant access to your kit via secure link. Setup takes minutes. Support is available if needed, but the system is designed to run without it.</p>
-
-  <div class="cta">
-    <a href="https://checkout.flowgen-ix.com">Deploy Now →</a>
-  </div>
+  <section>
+    <h2>Ready to Deploy?</h2>
+    <p>Launch your faceless automation system in under 30 minutes. Built for speed, scale, and credibility.</p>
+    <a href="https://yourcheckoutlink.com"><button class="cta-button">Get the Kit</button></a>
+  </section>
 
   <footer>
-    &copy; 2025 Flowgen-ix. Tactical systems for faceless brands.
+    &copy; 2025 Flowgen-ix. Built for leverage.
   </footer>
 
 </body>
 </html>
+
